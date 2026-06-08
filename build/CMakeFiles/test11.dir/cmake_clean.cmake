@@ -1,14 +1,17 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test11.dir/link.d"
   "CMakeFiles/test11_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/test11_autogen.dir/ParseCache.txt"
   "test11_autogen"
+  "CMakeFiles/test11.dir/downloadwidget/downloadwidget.cpp.o"
+  "CMakeFiles/test11.dir/downloadwidget/downloadwidget.cpp.o.d"
   "CMakeFiles/test11.dir/main.cpp.o"
   "CMakeFiles/test11.dir/main.cpp.o.d"
   "CMakeFiles/test11.dir/mainwindow/mainwindow.cpp.o"
   "CMakeFiles/test11.dir/mainwindow/mainwindow.cpp.o.d"
   "CMakeFiles/test11.dir/test11_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/test11.dir/test11_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/test11.dir/utils/utils.cpp.o"
+  "CMakeFiles/test11.dir/utils/utils.cpp.o.d"
   "test11"
   "test11.pdb"
 )

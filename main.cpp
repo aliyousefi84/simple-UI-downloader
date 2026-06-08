@@ -3,8 +3,7 @@
 
 int main (int argc , char **argv) {
     QApplication app(argc,argv);
-    MyWidget window;
-    window.resize(400,300);
-    window.show();
+    MainWindow* window = new MainWindow;
+    window->show();
     return app.exec();   
 }

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.2.0)
+cmake_minimum_required(VERSION 3.28.3)
 project(test11)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
@@ -12,6 +12,10 @@ add_executable(test11
     main.cpp
     ./mainwindow/mainwindow.cpp
     ./mainwindow/mainwindow.hpp
+    ./utils/utils.cpp
+    ./utils/utils.hpp
+    ./downloadwidget/downloadwidget.cpp
+    ./downloadwidget/downloadwidget.hpp
 )
 
 target_link_libraries(test11 PRIVATE Qt::Widgets Qt::Network)

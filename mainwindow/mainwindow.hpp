@@ -1,34 +1,84 @@
-#include <QWidget>
+#include <QMainWindow>
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QLineEdit>
-#include <QtNetwork/QNetworkAccessManager>
-#include <QtNetwork/QNetworkRequest>
-#include <QtNetwork/QNetworkReply>
-#include <qt6/QtCore/QUrl>
-#include <qt6/QtCore/QFile>
-#include <qt6/QtCore/QDir>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QUrl>
+#include <QFile>
+#include <QDir>
 #include <QProgressBar>
+#include <QTableView>
+#include <QStandardItemModel>
+#include <QToolBar>
+#include <QAction>
+#include <QMenuBar>
+#include <QMenu>
+#include "../utils/utils.hpp"
+#include "../downloadwidget/downloadwidget.hpp"
 
-class MyWidget : public QWidget {
+
+class MainWindow : public QMainWindow {
     Q_OBJECT
     public:
-        MyWidget (QWidget* parent = nullptr);
+        MainWindow (QMainWindow* parent = nullptr);
+        ~MainWindow ();
+    
     private slots:
         
-        void handle_click ();
+        void init_download_widget ();
+
+    private:
+        void create_table (); 
         
+        void create_toolbar ();
+
+        void create_menu ();
+
+        void handle_download_menu_clicked ();
+
+        void handle_download_toolbar_clicked ();
         
         void handle_download();
 
         QString parse_url ();
-    
-    private:
+
+        QStringList List;
+
+        QMenuBar* menubar;
+
+        QMenu* filemenu;
+
+        QMenu* helpmenu;
+
+        QAction* helpmenu_doc_action;
+
+        QAction* filemenu_save_action;
+
+        QAction* filemenu_quit_action;
+
+        QAction* filemenu_download_action;
+
+        QToolBar* toolbar;
+
+        QAction* tool_download_action;
+
+        QAction* tool_delete_action;
+
+        QAction* tool_delete_all_action;
+
+        QTableView* table_view;        
+        
+        QStandardItemModel* model;
+
         QPushButton* button;
        
-        QVBoxLayout* layout;
+        QVBoxLayout* Vlayout;
         
         QLineEdit* line;
+
+        downloadwidget* download_widget;
         
         QNetworkAccessManager* manager;
         

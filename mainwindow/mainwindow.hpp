@@ -2,13 +2,6 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QLineEdit>
-#include <QNetworkAccessManager>
-#include <QNetworkRequest>
-#include <QNetworkReply>
-#include <QUrl>
-#include <QFile>
-#include <QDir>
-#include <QProgressBar>
 #include <QTableView>
 #include <QStandardItemModel>
 #include <QToolBar>
@@ -80,9 +73,4 @@ class MainWindow : public QMainWindow {
 
         downloadwidget* download_widget;
         
-        QNetworkAccessManager* manager;
-        
-        QNetworkReply* reply;
-        
-        QProgressBar* progressbar;
 };

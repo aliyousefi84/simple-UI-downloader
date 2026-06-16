@@ -8,6 +8,7 @@ downloadwidget::downloadwidget (QWidget* parent) : QWidget (parent) {
     create_description (this);
     set_layout();
     handle_download_button_click ();
+    
 }
 
 void downloadwidget::create_downloadbox (QWidget* parent) {
@@ -50,25 +51,8 @@ void downloadwidget::set_layout () {
 }
 
 void downloadwidget::init_prog_widget () {
-    progressbar_widget = new QWidget;
-    progressbar_widget->resize (800,150);
-    progressbar = new QProgressBar (progressbar_widget);
-    progressbar->setAlignment (Qt::AlignCenter);
-
-    progressbar_reusme_button = new QPushButton ("Reusme",progressbar_widget);
-    progressbar_stop_button = new QPushButton ("Stop",progressbar_widget);
-    progressbar_cancel_button = new QPushButton ("Cancel",progressbar_widget);
-
-    GPlayout = new QGridLayout (progressbar_widget);
-
-    GPlayout->addWidget (progressbar , 0 ,0);
-    GPlayout->addWidget (progressbar_reusme_button, 1 ,0);
-    GPlayout->addWidget (progressbar_stop_button , 1 , 1);
-    GPlayout->addWidget (progressbar_cancel_button , 1 , 2);
-
-    services = new DownloadServices (this);
-    progressbar_widget->show();
-
+    progress_bar = new ProgressBar (NULL,get_url());
+    progress_bar->show();
 };
 
 
@@ -76,10 +60,12 @@ void downloadwidget::handle_download_button_click () {
     // check download line 
     // check save as line
     connect (download_button , SIGNAL (clicked()) , this , SLOT (init_prog_widget()));
+    
 };
 
 QString downloadwidget::get_url () {
     return download_url_line->text();
 };
+
 
 downloadwidget::~downloadwidget () {};

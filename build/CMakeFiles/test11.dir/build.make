@@ -139,19 +139,19 @@ CMakeFiles/test11.dir/downloadwidget/downloadwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test11.dir/downloadwidget/downloadwidget.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ali-pc/my_own_project/Downloader/downloadwidget/downloadwidget.cpp -o CMakeFiles/test11.dir/downloadwidget/downloadwidget.cpp.s
 
-CMakeFiles/test11.dir/services/services.cpp.o: CMakeFiles/test11.dir/flags.make
-CMakeFiles/test11.dir/services/services.cpp.o: /home/ali-pc/my_own_project/Downloader/services/services.cpp
-CMakeFiles/test11.dir/services/services.cpp.o: CMakeFiles/test11.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ali-pc/my_own_project/Downloader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test11.dir/services/services.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test11.dir/services/services.cpp.o -MF CMakeFiles/test11.dir/services/services.cpp.o.d -o CMakeFiles/test11.dir/services/services.cpp.o -c /home/ali-pc/my_own_project/Downloader/services/services.cpp
+CMakeFiles/test11.dir/progressbar/progressbar.cpp.o: CMakeFiles/test11.dir/flags.make
+CMakeFiles/test11.dir/progressbar/progressbar.cpp.o: /home/ali-pc/my_own_project/Downloader/progressbar/progressbar.cpp
+CMakeFiles/test11.dir/progressbar/progressbar.cpp.o: CMakeFiles/test11.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ali-pc/my_own_project/Downloader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test11.dir/progressbar/progressbar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test11.dir/progressbar/progressbar.cpp.o -MF CMakeFiles/test11.dir/progressbar/progressbar.cpp.o.d -o CMakeFiles/test11.dir/progressbar/progressbar.cpp.o -c /home/ali-pc/my_own_project/Downloader/progressbar/progressbar.cpp
 
-CMakeFiles/test11.dir/services/services.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test11.dir/services/services.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ali-pc/my_own_project/Downloader/services/services.cpp > CMakeFiles/test11.dir/services/services.cpp.i
+CMakeFiles/test11.dir/progressbar/progressbar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test11.dir/progressbar/progressbar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ali-pc/my_own_project/Downloader/progressbar/progressbar.cpp > CMakeFiles/test11.dir/progressbar/progressbar.cpp.i
 
-CMakeFiles/test11.dir/services/services.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test11.dir/services/services.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ali-pc/my_own_project/Downloader/services/services.cpp -o CMakeFiles/test11.dir/services/services.cpp.s
+CMakeFiles/test11.dir/progressbar/progressbar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test11.dir/progressbar/progressbar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ali-pc/my_own_project/Downloader/progressbar/progressbar.cpp -o CMakeFiles/test11.dir/progressbar/progressbar.cpp.s
 
 # Object files for target test11
 test11_OBJECTS = \
@@ -160,7 +160,7 @@ test11_OBJECTS = \
 "CMakeFiles/test11.dir/mainwindow/mainwindow.cpp.o" \
 "CMakeFiles/test11.dir/utils/utils.cpp.o" \
 "CMakeFiles/test11.dir/downloadwidget/downloadwidget.cpp.o" \
-"CMakeFiles/test11.dir/services/services.cpp.o"
+"CMakeFiles/test11.dir/progressbar/progressbar.cpp.o"
 
 # External object files for target test11
 test11_EXTERNAL_OBJECTS =
@@ -170,7 +170,7 @@ test11: CMakeFiles/test11.dir/main.cpp.o
 test11: CMakeFiles/test11.dir/mainwindow/mainwindow.cpp.o
 test11: CMakeFiles/test11.dir/utils/utils.cpp.o
 test11: CMakeFiles/test11.dir/downloadwidget/downloadwidget.cpp.o
-test11: CMakeFiles/test11.dir/services/services.cpp.o
+test11: CMakeFiles/test11.dir/progressbar/progressbar.cpp.o
 test11: CMakeFiles/test11.dir/build.make
 test11: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 test11: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2

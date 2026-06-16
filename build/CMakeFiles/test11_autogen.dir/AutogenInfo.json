@@ -384,9 +384,9 @@
 			null
 		],
 		[
-			"/home/ali-pc/my_own_project/Downloader/services/services.hpp",
+			"/home/ali-pc/my_own_project/Downloader/progressbar/progressbar.hpp",
 			"Mu",
-			"3BYFHCGL5U/moc_services.cpp",
+			"LLYINKBA3B/moc_progressbar.cpp",
 			null
 		],
 		[
@@ -473,7 +473,7 @@
 			null
 		],
 		[
-			"/home/ali-pc/my_own_project/Downloader/services/services.cpp",
+			"/home/ali-pc/my_own_project/Downloader/progressbar/progressbar.cpp",
 			"Mu",
 			null
 		],

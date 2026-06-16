@@ -22,7 +22,7 @@ QString read_file (const char* path) {
 void write_file (char* filename,char* data , size_t size) {
     char current_dir[1024];
     getcwd (current_dir, 1024);
-    chdir ("/home/$USER/Downloads");
+    chdir ("/home/ali-pc/Downloads");
     
     int fd = open (filename , O_CREAT | O_WRONLY);
 

@@ -1,7 +1,7 @@
 /home/ali-pc/my_own_project/Downloader/build/test11_autogen/MIKB3U5ZOU/moc_mainwindow.cpp: /home/ali-pc/my_own_project/Downloader/mainwindow/mainwindow.hpp \
   /home/ali-pc/my_own_project/Downloader/build/test11_autogen/moc_predefs.h \
   /home/ali-pc/my_own_project/Downloader/downloadwidget/downloadwidget.hpp \
-  /home/ali-pc/my_own_project/Downloader/services/services.hpp \
+  /home/ali-pc/my_own_project/Downloader/progressbar/progressbar.hpp \
   /home/ali-pc/my_own_project/Downloader/utils/utils.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \

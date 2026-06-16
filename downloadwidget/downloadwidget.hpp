@@ -7,7 +7,10 @@
 #include <QPushButton>
 #include <QProgressBar>
 #include <QString>
-#include "../services/services.hpp"
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include "../utils/utils.hpp"
+#include "../progressbar/progressbar.hpp"
 
 class downloadwidget : public QWidget {
     Q_OBJECT
@@ -30,8 +33,7 @@ class downloadwidget : public QWidget {
         
         void handle_download_button_click ();
 
-        void handle_http_request ();
-    
+
         QGridLayout* Glayout;
 
         QGridLayout* GPlayout;
@@ -52,17 +54,10 @@ class downloadwidget : public QWidget {
         
         QLabel* description_label;
 
-        DownloadServices* services;
+        ProgressBar* progress_bar;
 
-        QProgressBar* progressbar;
+        QUrl* url;
 
-        QPushButton* progressbar_reusme_button;
-
-        QPushButton* progressbar_stop_button;
-
-        QPushButton* progressbar_cancel_button;
-
-        QWidget* progressbar_widget;
 };
 
 

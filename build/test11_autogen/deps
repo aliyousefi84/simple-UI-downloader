@@ -9,8 +9,8 @@ test11_autogen/timestamp: \
 	/home/ali-pc/my_own_project/Downloader/main.cpp \
 	/home/ali-pc/my_own_project/Downloader/mainwindow/mainwindow.cpp \
 	/home/ali-pc/my_own_project/Downloader/mainwindow/mainwindow.hpp \
-	/home/ali-pc/my_own_project/Downloader/services/services.cpp \
-	/home/ali-pc/my_own_project/Downloader/services/services.hpp \
+	/home/ali-pc/my_own_project/Downloader/progressbar/progressbar.cpp \
+	/home/ali-pc/my_own_project/Downloader/progressbar/progressbar.hpp \
 	/home/ali-pc/my_own_project/Downloader/utils/utils.cpp \
 	/home/ali-pc/my_own_project/Downloader/utils/utils.hpp \
 	/usr/include/alloca.h \

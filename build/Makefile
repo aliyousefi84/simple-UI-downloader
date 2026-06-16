@@ -227,6 +227,30 @@ mainwindow/mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test11.dir/build.make CMakeFiles/test11.dir/mainwindow/mainwindow.cpp.s
 .PHONY : mainwindow/mainwindow.cpp.s
 
+services/services.o: services/services.cpp.o
+.PHONY : services/services.o
+
+# target to build an object file
+services/services.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test11.dir/build.make CMakeFiles/test11.dir/services/services.cpp.o
+.PHONY : services/services.cpp.o
+
+services/services.i: services/services.cpp.i
+.PHONY : services/services.i
+
+# target to preprocess a source file
+services/services.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test11.dir/build.make CMakeFiles/test11.dir/services/services.cpp.i
+.PHONY : services/services.cpp.i
+
+services/services.s: services/services.cpp.s
+.PHONY : services/services.s
+
+# target to generate assembly for a file
+services/services.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test11.dir/build.make CMakeFiles/test11.dir/services/services.cpp.s
+.PHONY : services/services.cpp.s
+
 test11_autogen/mocs_compilation.o: test11_autogen/mocs_compilation.cpp.o
 .PHONY : test11_autogen/mocs_compilation.o
 
@@ -295,6 +319,9 @@ help:
 	@echo "... mainwindow/mainwindow.o"
 	@echo "... mainwindow/mainwindow.i"
 	@echo "... mainwindow/mainwindow.s"
+	@echo "... services/services.o"
+	@echo "... services/services.i"
+	@echo "... services/services.s"
 	@echo "... test11_autogen/mocs_compilation.o"
 	@echo "... test11_autogen/mocs_compilation.i"
 	@echo "... test11_autogen/mocs_compilation.s"

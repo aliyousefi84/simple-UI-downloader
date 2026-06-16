@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'downloadwidget.hpp'
+** Meta object code from reading C++ file 'services.hpp'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.4.2)
 **
@@ -7,12 +7,12 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../downloadwidget/downloadwidget.hpp"
-#include <QtGui/qtextcursor.h>
+#include "../../../services/services.hpp"
 #include <QtNetwork/QSslError>
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'downloadwidget.hpp' doesn't include <QObject>."
+#error "The header file 'services.hpp' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.4.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -27,28 +27,28 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
-struct qt_meta_stringdata_downloadwidget_t {
+struct qt_meta_stringdata_DownloadServices_t {
     uint offsetsAndSizes[6];
-    char stringdata0[15];
-    char stringdata1[17];
+    char stringdata0[17];
+    char stringdata1[23];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_downloadwidget_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_downloadwidget_t qt_meta_stringdata_downloadwidget = {
+    uint(sizeof(qt_meta_stringdata_DownloadServices_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_DownloadServices_t qt_meta_stringdata_DownloadServices = {
     {
-        QT_MOC_LITERAL(0, 14),  // "downloadwidget"
-        QT_MOC_LITERAL(15, 16),  // "init_prog_widget"
-        QT_MOC_LITERAL(32, 0)   // ""
+        QT_MOC_LITERAL(0, 16),  // "DownloadServices"
+        QT_MOC_LITERAL(17, 22),  // "read_data_from_request"
+        QT_MOC_LITERAL(40, 0)   // ""
     },
-    "downloadwidget",
-    "init_prog_widget",
+    "DownloadServices",
+    "read_data_from_request",
     ""
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_downloadwidget[] = {
+Q_CONSTINIT static const uint qt_meta_data_DownloadServices[] = {
 
  // content:
       10,       // revision
@@ -70,50 +70,50 @@ Q_CONSTINIT static const uint qt_meta_data_downloadwidget[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject downloadwidget::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_downloadwidget.offsetsAndSizes,
-    qt_meta_data_downloadwidget,
+Q_CONSTINIT const QMetaObject DownloadServices::staticMetaObject = { {
+    QMetaObject::SuperData::link<downloadwidget::staticMetaObject>(),
+    qt_meta_stringdata_DownloadServices.offsetsAndSizes,
+    qt_meta_data_DownloadServices,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_downloadwidget_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_DownloadServices_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<downloadwidget, std::true_type>,
-        // method 'init_prog_widget'
+        QtPrivate::TypeAndForceComplete<DownloadServices, std::true_type>,
+        // method 'read_data_from_request'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
 
-void downloadwidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void DownloadServices::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<downloadwidget *>(_o);
+        auto *_t = static_cast<DownloadServices *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->init_prog_widget(); break;
+        case 0: _t->read_data_from_request(); break;
         default: ;
         }
     }
     (void)_a;
 }
 
-const QMetaObject *downloadwidget::metaObject() const
+const QMetaObject *DownloadServices::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *downloadwidget::qt_metacast(const char *_clname)
+void *DownloadServices::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_downloadwidget.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_DownloadServices.stringdata0))
         return static_cast<void*>(this);
-    return QWidget::qt_metacast(_clname);
+    return downloadwidget::qt_metacast(_clname);
 }
 
-int downloadwidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int DownloadServices::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = downloadwidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

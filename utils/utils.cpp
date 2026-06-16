@@ -18,3 +18,20 @@ QString read_file (const char* path) {
     QString str = QString (buffer);
     return str;
 }
+
+void write_file (char* filename,char* data , size_t size) {
+    char current_dir[1024];
+    getcwd (current_dir, 1024);
+    chdir ("/home/$USER/Downloads");
+    
+    int fd = open (filename , O_CREAT | O_WRONLY);
+
+    if (fd == -1)
+    {
+        std::cout << "can not open this file" << std::endl;
+        exit(1);
+    }
+
+    write (fd,data,size);
+    
+};

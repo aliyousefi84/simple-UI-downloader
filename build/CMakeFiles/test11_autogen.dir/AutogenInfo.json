@@ -384,6 +384,12 @@
 			null
 		],
 		[
+			"/home/ali-pc/my_own_project/Downloader/services/services.hpp",
+			"Mu",
+			"3BYFHCGL5U/moc_services.cpp",
+			null
+		],
+		[
 			"/home/ali-pc/my_own_project/Downloader/utils/utils.hpp",
 			"Mu",
 			"7HEHEGDA3T/moc_utils.cpp",
@@ -463,6 +469,11 @@
 		[ "/home/ali-pc/my_own_project/Downloader/main.cpp", "Mu", null ],
 		[
 			"/home/ali-pc/my_own_project/Downloader/mainwindow/mainwindow.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/ali-pc/my_own_project/Downloader/services/services.cpp",
 			"Mu",
 			null
 		],

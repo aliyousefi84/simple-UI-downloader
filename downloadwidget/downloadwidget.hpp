@@ -5,13 +5,20 @@
 #include <QGridLayout>
 #include <QLineEdit>
 #include <QPushButton>
+#include <QProgressBar>
+#include <QString>
+#include "../services/services.hpp"
 
 class downloadwidget : public QWidget {
     Q_OBJECT
     public:
         downloadwidget (QWidget* parent = nullptr);
         ~downloadwidget ();
-        
+        QString get_url ();
+    private slots:
+
+        void init_prog_widget ();
+    
     private:
         void create_downloadbox (QWidget* parent);
 
@@ -21,7 +28,13 @@ class downloadwidget : public QWidget {
 
         void set_layout ();
         
+        void handle_download_button_click ();
+
+        void handle_http_request ();
+    
         QGridLayout* Glayout;
+
+        QGridLayout* GPlayout;
 
         QLineEdit* download_url_line;
         
@@ -38,6 +51,18 @@ class downloadwidget : public QWidget {
         QLabel* download_url_label;
         
         QLabel* description_label;
+
+        DownloadServices* services;
+
+        QProgressBar* progressbar;
+
+        QPushButton* progressbar_reusme_button;
+
+        QPushButton* progressbar_stop_button;
+
+        QPushButton* progressbar_cancel_button;
+
+        QWidget* progressbar_widget;
 };
 
 

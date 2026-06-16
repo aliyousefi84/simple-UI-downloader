@@ -16,6 +16,8 @@ add_executable(test11
     ./utils/utils.hpp
     ./downloadwidget/downloadwidget.cpp
     ./downloadwidget/downloadwidget.hpp
+    ./services/services.cpp
+    ./services/services.hpp
 )
 
 target_link_libraries(test11 PRIVATE Qt::Widgets Qt::Network)

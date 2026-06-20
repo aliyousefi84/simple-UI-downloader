@@ -6,8 +6,12 @@
 #include <string>
 #include <fstream>
 
-vector<DataModel> from_json (char* filepath);
+static DataModel* from_json (const Json::Value& parsed_data);
 
 string to_json (DataModel model);
+
+vector<DataModel*> json_array (char* filepath);
+
+void clean_up (DataModel* model);
 
 #endif

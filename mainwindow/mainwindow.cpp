@@ -74,6 +74,10 @@ void MainWindow::handle_download_toolbar_clicked () {
     connect (tool_download_action , SIGNAL(triggered()),this,SLOT (init_download_widget()));
 }
 
+void MainWindow::edit_table () {
+    
+};
+
 MainWindow::~MainWindow (){};
 
 /*

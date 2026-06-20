@@ -1,5 +1,0 @@
-/home/ali-pc/my_own_project/Downloader/build/CMakeFiles/test11.dir
-/home/ali-pc/my_own_project/Downloader/build/CMakeFiles/edit_cache.dir
-/home/ali-pc/my_own_project/Downloader/build/CMakeFiles/rebuild_cache.dir
-/home/ali-pc/my_own_project/Downloader/build/CMakeFiles/test11_autogen_timestamp_deps.dir
-/home/ali-pc/my_own_project/Downloader/build/CMakeFiles/test11_autogen.dir

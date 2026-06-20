@@ -18,11 +18,11 @@ class ProgressBar : public QWidget {
     public:
         ProgressBar (QWidget* parent, QString url);
 
+        QByteArray byte;
     private slots:
         void read_data_from_request ();
 
         void update_progress (qint64 received , qint64 total);
-            
     private:
 
         void send_request (QString url);
@@ -40,8 +40,6 @@ class ProgressBar : public QWidget {
         QPushButton* progressbar_cancel_button;
 
         QGridLayout* GPlayout;
-
-        QByteArray byte;
 
         QString download_url;
 };

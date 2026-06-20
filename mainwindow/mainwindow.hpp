@@ -17,6 +17,8 @@ class MainWindow : public QMainWindow {
     public:
         MainWindow (QMainWindow* parent = nullptr);
         ~MainWindow ();
+        
+        void edit_table ();
     
     private slots:
         

@@ -10,8 +10,8 @@
 
 #define DB_PATH "/var/lib/Downloader/db.json"
 
-void store_data (vector<DataModel> model_list);
+void store_data (vector<DataModel*> model_list);
 
-DataModel* load_data ();
+vector<DataModel*> load_data ();
 
 #endif

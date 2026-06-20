@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28.3)
-project(test11)
+project(Downloader)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 COMPONENTS Network REQUIRED)
@@ -20,4 +20,4 @@ add_executable(test11
     ./progressbar/progressbar.hpp
 )
 
-target_link_libraries(test11 PRIVATE Qt::Widgets Qt::Network)
+target_link_libraries(Downloader PRIVATE Qt::Widgets Qt::Network)

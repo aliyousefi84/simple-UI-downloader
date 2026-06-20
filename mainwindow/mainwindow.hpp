@@ -2,8 +2,6 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QLineEdit>
-#include <QTableView>
-#include <QStandardItemModel>
 #include <QToolBar>
 #include <QAction>
 #include <QMenuBar>
@@ -17,15 +15,12 @@ class MainWindow : public QMainWindow {
     public:
         MainWindow (QMainWindow* parent = nullptr);
         ~MainWindow ();
-        
-        void edit_table ();
     
     private slots:
         
         void init_download_widget ();
 
     private:
-        void create_table (); 
         
         void create_toolbar ();
 
@@ -34,10 +29,7 @@ class MainWindow : public QMainWindow {
         void handle_download_menu_clicked ();
 
         void handle_download_toolbar_clicked ();
-        
-        void handle_download();
 
-        QString parse_url ();
 
         QStringList List;
 
@@ -58,14 +50,6 @@ class MainWindow : public QMainWindow {
         QToolBar* toolbar;
 
         QAction* tool_download_action;
-
-        QAction* tool_delete_action;
-
-        QAction* tool_delete_all_action;
-
-        QTableView* table_view;        
-        
-        QStandardItemModel* model;
 
         QPushButton* button;
        

@@ -14,8 +14,7 @@
 #include <ctime>
 #include "../utils/utils.hpp"
 #include "../progressbar/progressbar.hpp"
-#include "../internal/datamodel.hpp"
-#include "../internal/storage.hpp"
+
 
 class downloadwidget : public QWidget {
     Q_OBJECT
@@ -24,9 +23,6 @@ class downloadwidget : public QWidget {
         ~downloadwidget ();
 
         QString get_url ();
-
-        void initialize_datamodel_name ();
-
     private slots:
 
         void init_prog_widget ();

@@ -84,21 +84,5 @@ QString downloadwidget::get_url () {
 };
 
 
-void downloadwidget::initialize_datamodel_name () {
-    QUrl url = QUrl (get_url());
-    DataModel* model = init_model ();
-
-    auto now = std::chrono::system_clock::now ();
-    std::time_t time = std::chrono::system_clock::to_time_t(now);
-
-    model->FileName = url.fileName().toStdString();
-    model->Description = description_line->text().toStdString();
-    model->State = "completed";
-    model->Date = std::ctime (&time);
-    model->Size = progress_bar->byte.toFloat();
-
-    model_list.push_back (model);
-    store_data (model_list);
-};
 
 downloadwidget::~downloadwidget () {};

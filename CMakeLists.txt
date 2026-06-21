@@ -8,7 +8,7 @@ find_package(Qt6 COMPONENTS Widgets Gui REQUIRED)
 set(CMAKE_AUTOMOC ON)
 
 
-add_executable(test11
+add_executable(Downloader
     main.cpp
     ./mainwindow/mainwindow.cpp
     ./mainwindow/mainwindow.hpp
